@@ -756,7 +756,7 @@ section,
 # Portfolio Details Section
 --------------------------------------------------------------*/
 .image-caption {
-  font-size: 12px;
+  font-size: 1px;
   color: #555;
   margin-top: 10px;
   max-width: 600px;
@@ -845,6 +845,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
+/*.starter-section {
   /* Add your styles here */
-}
+/*}
