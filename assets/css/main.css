@@ -540,21 +540,21 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Intro Section (Merged Hero + About)
+# Intro Section
 --------------------------------------------------------------*/
 .intro-section {
   width: 100%;
-  min-height: 20vh; /* Adjust height as needed */
-  padding: 60px 0; /* Reduced padding */
+  min-height: 20vh; 
+  padding: 60px 0; 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: var(--background-color); /* Keep it clean */
+  background-color: var(--background-color); 
 }
 
 .intro-title {
-  font-size: 60px; /* Title size */
+  font-size: 50px; 
   font-weight: 700;
   color: var(--default-color);
   margin-bottom: 20px;
