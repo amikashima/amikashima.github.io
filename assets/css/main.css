@@ -831,6 +831,12 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
+.portfolio-details .portfolio-description ul,
+.portfolio-details .portfolio-description ul li {
+  color: var(--default-color);
+}
+
+
 @media (max-width: 768px) {
   .portfolio-details .portfolio-details-slider img {
     width: 90%;
