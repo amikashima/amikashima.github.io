@@ -136,7 +136,7 @@
               <h2>Geospatial Analysis of Voter Turnout in London's Local Elections</h2>
               <p>
                 This is an adaptation of my assignment from my second-year introductory data analysis course, 
-                for which I created a function to generate Geographically Weighted Regression analyses and visualisations. 
+                for which I created a function on R to generate Geographically Weighted Regression analyses and visualisations. 
                 I applied this function to the <a href="https://data.london.gov.uk/census/2021-ward-and-lsoa-estimates/" target="_blank">2021 census data</a> in 
                 the Borough of Haringey to study how the 
                 relationship between age and health varies across space.
@@ -157,26 +157,42 @@
                 When applying a simple OLS regression with independent variables capturing demographics, economic activity, 
                 education, and homeownership, the proportion of residents over 65 was significantly and positively associated with 
                 poor health outcomes across Haringey (β = 0.17, p < 0.001), 
-                indicating that, on average, areas with larger elderly populations reported higher rates of “bad” or “very bad” health.
+                indicating that, on average, areas with larger elderly populations reported higher rates of poor health.
                 <br><br>
 
                 However, GWR reveales spatial heterogeneity; in the east, there was a strong positive relationship with more elderly populated areas 
-                showing worse health, while in the west, the relationship was negative (Image 1). This suggests that the 
-                western areas where there are higher concentrations of elderly people (Image 2) were not associated with worse health and 
+                showing worse health, while in the west, the relationship was negative. This suggests that the 
+                western areas where there are higher concentrations of elderly people were not associated with worse health and 
                 may even correlate with better outcomes. 
                 </p>
                 
                 <p>
-                <em><strong>East–West Divide in Haringey</strong></em><br><br>
-                This analysis suggests that health inequalities in Haringey are not fully explained by borough-level or 
-                regional socioeconomic and demographic characteristics. 
-                Instead, they intersect deeply with local contexts, and they are patterns that cannot be captured by a simple OLS model.
+                <em><strong>Understanding the East–West Divide in Haringey</strong></em>
+                
+                <br><br>
+                The GWR analysis suggests that health inequalities in Haringey are not fully explained by borough-level or 
+                regional socioeconomic and demographic characteristics. Instead, they intersect deeply with local 
+                contexts, and they are patterns that cannot be captured by a simple OLS model.
 
                 <br><br>
-                Spatially sensitive models like GWR reveal these local variations, which are essential to avoid applying blanket assumptions across the borough. 
-                Public health strategies targeting elderly wellbeing, for example, may need to be locally tailored; 
-                in the case of Haringey, this means focusing on vulnerable eastern neighbourhoods rather than applying 
-                uniform interventions across both east and west.
+                Historically, western Haringey was established as a leafy Victorian suburb for the middle and upper classes, 
+                while eastern Haringey developed as an industrial centre. These historic divides and spatial inequalities 
+                between the east and west continues to persist. Spatially sensitive models like GWR reveal these local variations, 
+                which are essential to avoid applying blanket assumptions across the borough. 
+
+                <br><br>
+                <em><strong>Implications for Public Health</strong></em>
+
+                <br><br>
+                Public health strategies targeting elderly wellbeing should be locally tailored. 
+                In the case of Haringey, this means understanding that poor health outcomes among the elderly in eastern neighbourhoods 
+                are more strongly explained by age-related factors compared to their counterparts in the west.
+
+                <br><br>
+                Reflecting on this project 3 years later, I see GWR as an informative tool for revealing spatial nonstationarity 
+                and inequalities, but further analyses are required to understand the causal relationships that form these geographic 
+                patterns.  
+                
                 </p>
 
             </div>
