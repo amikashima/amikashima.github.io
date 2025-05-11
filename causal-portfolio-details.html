@@ -140,15 +140,15 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Causal Impact of the 2018 Voter ID Pilot Scheme on Voter Turnout in London</h2>
               
-              <p>Using difference-in-differences, I analysed the causal relationship between the 
-                <a href "https://www.electoralcommission.org.uk/research-reports-and-data/pilot-evaluations/voter-identification-pilots/may-2018-voter-identification-pilot-schemes" target="_blank">2018 Voter ID Pilot Scheme</a> and voter turnout in London. 
-                The pilot scheme required voters in the Borough of Bromley (Fig 1) to present photographic ID at polling stations, a controversial policy 
+              <p>In 2018, the 
+                <a href "https://www.electoralcommission.org.uk/research-reports-and-data/pilot-evaluations/voter-identification-pilots/may-2018-voter-identification-pilot-schemes" target="_blank">Voter ID Pilot Scheme</a> 
+                required voters in the Borough of Bromley (Fig 1) to present photographic ID at polling stations, a controversial policy 
                 which raised concerns surrounding potential <a href "https://blogs.lse.ac.uk/politicsandpolicy/the-results-of-the-2018-voter-id-pilots/" target="_blank">voter suppression and disenfranchisement</a>. 
                 Official reports concluded that there was <a href "https://www.electoralcommission.org.uk/research-reports-and-data/pilot-evaluations/voter-identification-pilots/may-2018-voter-identification-pilot-schemes/impact-voters" target="_blank">“no evidence”</a> 
-                that this scheme significantly affected turnout based on exploratory analyses. My work aimed to reassess this claim using a causal inference framework:
+                that this scheme significantly affected turnout based on exploratory analyses. My study aimed to reassess this claim using difference-in-differences as a causal inference framework:
               </p>
               
-              <p><em><strong>1. Difference-in-differences Approach</strong></em><br><br>
+              <p><em><strong>Difference-in-differences Methodology</strong></em><br><br>
                 I constructed a panel dataset using ward-level turnout data from 2014, 2016, and 2018 local and mayoral elections. 
                 To improve comparability, I combined difference-in-differences with Propensity Score Matching (PSM) by
                 pairing Bromley’s 22 treated wards with 85 control wards matched on sociodemographic and political variables (Fig 2). 
@@ -156,15 +156,15 @@
                 The model was validated using parallel trend checks and a placebo DiD test.
               </p>
               
-              <p><em><strong>2. Key Findings</strong></em><br><br>
+              <p><em><strong>Estimated Effect of Voter ID Requirements</strong></em><br><br>
                 Voter turnout declined by 5.7 percentage points in treated wards between 2016 and 2018, 
                 compared to 3.6 points in matched control wards. The DiD model estimated a 2.29 percentage point 
                 reduction in turnout due to the ID requirement, but this effect was not statistically significant (p = 0.19). 
-                Although the result does not confirm voter suppression, it is important to note that Bromley is a predominantly white 
-                and relatively conservative population in London, which are important demographic and political features that 
+                Although the result does not confirm voter suppression due to voter ID requirements, it is important to note that Bromley is a predominantly white 
+                and relatively conservative population in London - these are important demographic and political features that 
                 may have underestimated the policy’s effects on turnout. </p>
                 
-                <p><em><strong>3. Next Steps</strong></em><br><br>
+                <p><em><strong>Future Directions</strong></em><br><br>
                   Ideally, future studies should estimate the subgroup-specific impacts (e.g. by age or ethnicity), 
                   especially for higher-stakes elections like the General Election where more diverse population participate. 
                   Although granular voter participation data is not publicly available, 
