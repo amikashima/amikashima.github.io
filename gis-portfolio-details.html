@@ -145,45 +145,51 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Geospatial Analysis of Voter Turnout in London's Local Elections</h2>
               <p>
-                In my second-year <a href="https://www.ucl.ac.uk/module-catalogue/modules/geocomputation-GEOG0030" target="_blank">Geocomputation</a> coursework, I analysed the geographic distribution of voter turnout in London’s local elections. 
+                In my second-year <a href="https://www.ucl.ac.uk/module-catalogue/modules/geocomputation-GEOG0030" target="_blank">Geocomputation</a> coursework, 
+                I analysed the geographic distribution of voter turnout in London’s local elections. 
                 Here are some key findings from the project:
                 </p>
                 
                 <p>
-                <em><strong>1. London's Divided Political Participation</strong></em><br><br>
-                Higher turnout was seen in southwest boroughs such as Richmond upon Thames and Kingston upon Thames, while northeast boroughs like Barking and Dagenham some of the lowest turnout. 
-                We also observe intra-borough disparities, such as an east-west divide within Haringey with higher turnout in the western area and lower in the eastern area (more about this divide is discussed <a href="https://harringayonline.com/forum/topics/haringey-the-most-divided" target="_blank">here</a>). 
-                Hotspot and coldspot areas were identified using the <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/h-how-hot-spot-analysis-getis-ord-gi-spatial-stati.htm" target="_blank">Getis-Ord Gi* statistic</a>, with high voter turnout clustering in the southwest and low turnout clustering in areas such as Barking and Dagenham and central Southwark. 
+                <em><strong>London's Divided Political Participation</strong></em><br><br>
+                Hotspot and coldspot areas were identified using the <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/h-how-hot-spot-analysis-getis-ord-gi-spatial-stati.htm" target="_blank">Getis-Ord Gi* statistic</a>, 
+                with high voter turnout clustering in the southwest boroughs such as Richmond upon Thames and Kingston upon Thames, and 
+                low turnout clustering in areas such as Barking and Dagenham and central Southwark. There are intra-borough disparities, 
+                such as an east-west divide within 
+                Haringey with higher turnout in the western area and lower in the eastern area. 
+                 
                 </p>
                 
                 <p>
-                <em><strong>2. Polling Station Proximity ≠ Turnout</strong></em><br><br>
+                <em><strong>Polling Station Proximity ≠ Turnout</strong></em><br><br>
+                
                 Since locations of polling stations from 2018 are not publicly available, 
                 I used the dataset from the 2010 elections in North London, 
                 available <a href="https://data.london.gov.uk/dataset/polling-stations-london-2010-local-general-elections" target="_blank">here</a>. 
                 The addresses of polling stations were converted into geographic coordinates using 
                 the <a href="https://developers.google.com/maps/documentation/geocoding/overview" target="_blank">Google Maps Geocoding API</a>.
+                
+                <br><br>
                 Using DBSCAN (Density-Based Spatial Clustering of Applications with Noise), 
                 I overlaid the identified clusters on a choropleth of in-person voter turnout. 
                 Interestingly, areas within the DBSCAN-identified clusters tended to have lower voter turnout, while northern wards with higher turnout were often outside these clusters.
                 </p>
                 
                 <p>
-                <em><strong>3. Does Access to Public Transit Really Drive Voter Turnout?</strong></em><br><br>
+                <em><strong>Does Access to Public Transit Really Drive Voter Turnout?</strong></em><br><br>
                 In the Borough of Enfield, which had the highest in-person turnout in North London, also had a relatively low concentration of polling stations in North London. 
                 Accessibility was measured by calculating the shortest path distance between polling stations and nearby public transit (bus, tube, and train) using <a href="https://cran.r-project.org/web/packages/osmdata/vignettes/osmdata.html" target="_blank">OpenStreetMap API</a>. 
+                
+                <br><br>
                 The analysis revealed while central Enfield wards with high turnout also had good accessibility, the relationship was not always consistent. 
                 For example, Edmonton Green had excellent accessibility but relatively low turnout, whereas Chase had limited accessibility but high turnout.
-
-                <br><br>
                 So, the answer to the question is no simple yes or no; voter behaviour is undeniably complex and 
                 determined by a multifaceted factors beyond what we can capture through spatial analysis. 
                 </p>
-                <br>
 
-                <h2>Revisiting the Project 2 Years Later</h2>
-                  
                 <p>
+                  <em><strong>Revisiting the Project 2 Years Later</strong></em><br><br>
+                  
                   Looking back on this project in 2025, I recognise limitations in the "timeliness" or 
                   the contemporary relevance of the data I've used. 
                   My project was completed just before the Greater London Authority released the 2022 local election data, 

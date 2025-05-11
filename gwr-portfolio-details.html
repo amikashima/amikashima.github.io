@@ -133,64 +133,60 @@
 
           <div class="col-lg-12">
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Geospatial Analysis of Voter Turnout in London's Local Elections</h2>
+              <h2>Haringey’s East–West Divide: Geographically Weighted Regression Analysis of Elderly Health Inequality</h2>
               <p>
-                This is an adaptation of my assignment from my second-year introductory data analysis course, 
-                for which I created a function on R to generate Geographically Weighted Regression analyses and visualisations. 
-                I applied this function to the <a href="https://data.london.gov.uk/census/2021-ward-and-lsoa-estimates/" target="_blank">2021 census data</a> in 
-                the Borough of Haringey to study how the 
-                relationship between age and health varies across space.
+                This is an adaptation of my assignment from my <a href="https://www.ucl.ac.uk/module-catalogue/modules/data-analysis-POLS0010" target="_blank">second-year introductory data analysis course </a>, 
+                for which I created a function on R to output Geographically Weighted Regression analyses and visualisations. 
+                I applied my function to <a href="https://data.london.gov.uk/census/2021-ward-and-lsoa-estimates/" target="_blank">2021 census data</a> in 
+                the Borough of Haringey to study how the relationship between age and health varies across space.
                 </p>
                 
                 <p>
-                <em><strong>1. What is Geographically Weighted Regression (GWR)? </strong></em><br><br>
-                GWR is a method for exploring how the relationship between independent and dependent variables varies across geographic areas. 
-                Unlike an ordinary least squares (OLS) regression model that estimates a single global relationship for 
-                the entire study area, GWR fits a local regression model at each location and accounts for spatial nonstationarity. 
+                <em><strong>What is a Geographically Weighted Regression (GWR)? </strong></em><br><br>
+                GWR is a method for studying how the relationship between independent and dependent variables varies across geographic areas. 
+                Unlike an Ordinary Least Squares (OLS) regression model that estimates a single global relationship for 
+                the entire study area, GWR fits a local regression model at each location to account for spatial nonstationarity. 
                 The function I constructed checks statistical significance 
                 and multicollinearity, runs an adaptive-kernel GWR model, and outputs spatial maps visualising these local relationships.
                 </p>
                 
                 <p>
-                <em><strong>2. Proportion of Elderly Population vs Health in Haringey</strong></em><br><br>
+                <em><strong>Proportion of Elderly Population vs Health in Haringey</strong></em><br><br>
 
-                When applying a simple OLS regression with independent variables capturing demographics, economic activity, 
+                When applying a simple OLS regression with independent variables related to demographics, economic activity, 
                 education, and homeownership, the proportion of residents over 65 was significantly and positively associated with 
-                poor health outcomes across Haringey (β = 0.17, p < 0.001), 
-                indicating that, on average, areas with larger elderly populations reported higher rates of poor health.
+                poor health outcomes across Haringey (β = 0.17, p < 0.001). This indicates that, on average, areas with larger elderly populations 
+                reported higher rates of poor health.
                 <br><br>
 
-                However, GWR reveales spatial heterogeneity; in the east, there was a strong positive relationship with more elderly populated areas 
+                However, GWR reveals spatial heterogeneity; in the east, there was a strong positive relationship with more elderly populated areas 
                 showing worse health, while in the west, the relationship was negative. This suggests that the 
-                western areas where there are higher concentrations of elderly people were not associated with worse health and 
-                may even correlate with better outcomes. 
+                western areas where there are higher concentrations of elderly people were <em>not</em> associated with worse health and 
+                may even correlate with better health outcomes. 
                 </p>
                 
                 <p>
-                <em><strong>3. Understanding the East–West Divide in Haringey</strong></em>
-                
-                <br><br>
-                The GWR analysis suggests that health inequalities in Haringey are not fully explained by borough-level or 
-                regional socioeconomic and demographic characteristics. Instead, they intersect deeply with local 
-                contexts, and they are patterns that cannot be captured by a simple OLS model.
+                <em><strong>Implications for Public Health</strong></em>
 
                 <br><br>
                 Historically, western Haringey was established as a leafy Victorian suburb for the middle and upper classes, 
-                while eastern Haringey developed as an industrial centre. These historic divides and spatial inequalities 
-                between the east and west continues to persist. Spatially sensitive models like GWR reveal these local variations, 
-                which are essential to avoid applying blanket assumptions across the borough. 
+                while eastern Haringey developed as an industrial centre. These historic divides and geospatial inequalities 
+                between the east and west continue to persist, which is why spatially sensitive models like GWR reveal these local variations. 
+                They are patterns that cannot be captured by a simple OLS model that applies "blanket" assumptions across the borough. 
 
                 <br><br>
-                <em><strong>4. Implications for Public Health</strong></em>
-
-                <br><br>
-                Public health strategies targeting elderly wellbeing should be locally tailored. 
+                The GWR results hint at the importance of locally tailored public health strategies targeting elderly wellbeing. 
                 In the case of Haringey, this means understanding that poor health outcomes among the elderly in eastern neighbourhoods 
                 are more strongly explained by age-related factors compared to their counterparts in the west.
 
-                <br><br>
-                Reflecting on this project 3 years later, I see GWR as an informative tool for revealing spatial nonstationarity 
-                and inequalities, but further analyses are required to understand the causal relationships that form these geographic 
+                <p>
+                  <em><strong>Reflection</strong></em>
+
+                  <br><br>
+                Reflecting on this project 3 years later, I see GWR as an informative tool for modelling spatially varying relationships and 
+                understanding inequalities, especially for a borough like Haringey with historically rooted geographic divides. 
+                However, further analyses are required 
+                to understand the <em>causal relationships</em> that form these geographic 
                 patterns.  
                 
                 </p>
