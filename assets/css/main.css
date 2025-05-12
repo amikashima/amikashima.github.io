@@ -87,6 +87,15 @@ h6 {
   font-family: var(--heading-font);
 }
 
+h5 {
+  font-size: 16px; /* or any size you prefer */
+  color: color-mix(in srgb, var(--default-color), transparent 20%); /* makes it lighter */
+  font-weight: 500; /* optional: make it thinner */
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
