@@ -117,7 +117,7 @@
   skillsAnimation.forEach((item) => {
     new Waypoint({
       element: item,
-      offset: '80%',
+      offset: '100%',
       handler: function(direction) {
         let progress = item.querySelectorAll('.progress .progress-bar');
         progress.forEach(el => {
