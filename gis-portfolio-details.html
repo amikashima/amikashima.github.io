@@ -166,10 +166,12 @@
                 
                 <p>
                 Hotspot and coldspot areas were identified using the <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/h-how-hot-spot-analysis-getis-ord-gi-spatial-stati.htm" target="_blank">Getis-Ord Gi* statistic</a>, 
-                with high voter turnout clustering in the southwest boroughs such as Richmond upon Thames and Kingston upon Thames, and 
-                low turnout clustering in areas such as Barking and Dagenham and central Southwark. There are intra-borough disparities, 
-                such as an east-west divide within 
-                Haringey, with higher turnout in the western area and lower in the eastern area. 
+                which detects statistically significant spatial clusters of high (hotspots) or low (coldspots) values. 
+                High voter turnout clustering was observed in the southwest boroughs such as Richmond upon Thames and Kingston upon Thames, and 
+                low turnout clustering in areas such as Barking and Dagenham. 
+                
+                There were also intra-borough disparities, such as an east-west divide within 
+                Haringey, with higher turnout in the western area and lower in the eastern region. 
                 </p>
                
                 
@@ -177,13 +179,13 @@
                 
                 <p>
                 Since the locations of polling stations from 2018 are not publicly available, 
-                I used the dataset from the 2010 elections in North London, which is available <a href="https://data.london.gov.uk/dataset/polling-stations-london-2010-local-general-elections" target="_blank">here</a>. 
+                I used the dataset from the 2010 elections in North London (available <a href="https://data.london.gov.uk/dataset/polling-stations-london-2010-local-general-elections" target="_blank">here</a>). 
                 The addresses of polling stations were converted into geographic coordinates using 
-                the <a href="https://developers.google.com/maps/documentation/geocoding/overview" target="_blank">Google Maps Geocoding API</a>.
+                <a href="https://developers.google.com/maps/documentation/geocoding/overview" target="_blank">Google Maps Geocoding API</a>.
                 
                 <br><br>
-                Using DBSCAN (Density-Based Spatial Clustering of Applications with Noise), 
-                I overlaid the identified clusters on a choropleth of in-person voter turnout. 
+                I used DBSCAN (Density-Based Spatial Clustering of Applications with Noise) 
+                to overlay the identified clusters on a choropleth of in-person voter turnout. 
                 Interestingly, areas within the DBSCAN-identified clusters tended to have lower voter turnout, while northern wards with higher turnout were often outside these clusters.
                 </p>
                 
@@ -192,14 +194,14 @@
                 <p>
                   Accessibility was measured by calculating the shortest path distance between polling stations and nearby public transit (bus, tube, and train) 
                   using <a href="https://cran.r-project.org/web/packages/osmdata/vignettes/osmdata.html" target="_blank">OpenStreetMap API</a>. 
-                  The Borough of Enfield, which had the highest in-person turnout in North London, also had a relatively low concentration of polling stations. 
+                  Transit accessibility was analysed in the Borough of Enfield, which had the highest in-person turnout and a relatively low concentration of polling stations in North London. 
                 
                 
                 <br><br>
                 Although central Enfield wards with high turnout also had good accessibility, the relationship was not always consistent. 
                 For example, Edmonton Green had excellent accessibility but a relatively low turnout, whereas Chase had limited accessibility but a high turnout.
-                So, the answer to the question is no simple yes or no; voter behaviour is undeniably complex and 
-                determined by multifaceted factors beyond what we can capture through spatial analysis. 
+                So, the answer to the question is no simple yes or no; voter behaviour is determined by multifaceted factors 
+                beyond what we can capture through geospatial analysis. 
                 </p>
 
                 <h5><strong>Revisiting the Project 2 Years Later</strong></h5>
@@ -207,16 +209,16 @@
                 <p>  
                   Looking back on this project in 2025, I recognise limitations in the "timeliness" of the data I've used. 
                   My project was completed just before the Greater London Authority released the 2022 local election data, 
-                  and the lack of a centralised and publicly accessible database for polling station locations was a huge challenge. 
+                  and the lack of a centralised database for polling station locations was a huge challenge. 
                   Not many local councils publish past polling locations, which led me to use data from the 2010 and 
-                  2018 local elections - neither of which captures the volatile, socially and politically evolving unique 
+                  2018 local elections - neither of which captures the volatile, socially and politically evolving, unique 
                   characteristics of London.
 
                   <br><br>
                   Although this project met the requirements of the coursework, with the benefit of hindsight and greater freedom, 
                   I would be interested in conducting a longitudinal study examining changes in voter turnout across London from 2010 to 2025. 
-                  This would illuminate interesting insights into where political participation has increased, where it has declined, 
-                  and how these trends correlate with demographic shifts, gentrification, and broader socioeconomic change.
+                  This would reveal where political participation has increased, where it has declined, 
+                  and how these trends correlate with demographic shifts, gentrification, and broader socioeconomic changes.
                 </p>
 
             </div>

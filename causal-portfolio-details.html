@@ -152,18 +152,17 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Causal Impact of the 2018 Voter ID Pilot Scheme on Voter Turnout in London</h2>
               
-              <p>In 2018, the 
-                <a href "https://www.electoralcommission.org.uk/research-reports-and-data/pilot-evaluations/voter-identification-pilots/may-2018-voter-identification-pilot-schemes" target="_blank">Voter ID Pilot Scheme</a> 
-                required voters in the Borough of Bromley (Fig 1) to show photographic IDs at polling stations, which was a controversial policy raising concerns surrounding potential <a href "https://blogs.lse.ac.uk/politicsandpolicy/the-results-of-the-2018-voter-id-pilots/" target="_blank">voter suppression and disenfranchisement</a>. 
-                Official reports concluded that there was <a href "https://www.electoralcommission.org.uk/research-reports-and-data/pilot-evaluations/voter-identification-pilots/may-2018-voter-identification-pilot-schemes/impact-voters" target="_blank">“no evidence”</a> 
-                that this pilot scheme significantly affected turnout based on exploratory analyses. My study aimed to reassess this claim using difference-in-differences as a causal inference framework.
+              <p>The <a href "https://www.electoralcommission.org.uk/research-reports-and-data/pilot-evaluations/voter-identification-pilots/may-2018-voter-identification-pilot-schemes" target="_blank">2018 Voter ID Pilot Scheme</a> 
+                required voters in the Borough of Bromley (Fig 1) to show photographic IDs at polling stations, while voters in other boroughs were not required to show any IDs to cast their votes. Although this raised concerns surrounding potential <a href "https://blogs.lse.ac.uk/politicsandpolicy/the-results-of-the-2018-voter-id-pilots/" target="_blank">voter suppression and disenfranchisement</a>, 
+                official reports concluded that there was <a href "https://www.electoralcommission.org.uk/research-reports-and-data/pilot-evaluations/voter-identification-pilots/may-2018-voter-identification-pilot-schemes/impact-voters" target="_blank">"no evidence"</a> 
+                that this pilot scheme significantly affected turnout based on <em>exploratory</em> analyses. My study aimed to reassess this claim using a <em>causal</em> inference framework. 
               </p>
               
               <h5><strong>Difference-in-differences Framework</strong></h5>
               <p>
-                I constructed a panel dataset using ward-level turnout data from the 2014, 2016, and 2018 local and mayoral elections. 
+                I constructed a panel dataset using ward-level turnout data from the 2014, 2016, and 2018 local and mayoral elections (<a href "https://data.london.gov.uk/dataset?q=turnout" target="_blank">link to data</a>). 
                 To improve comparability, I combined difference-in-differences with Propensity Score Matching (PSM) by
-                pairing Bromley’s 22 treated wards with 85 control wards matched on sociodemographic and political variables (Fig 2). 
+                pairing Bromley's 22 treated wards with 85 control wards matched on sociodemographic and political variables (Fig 2). 
                 I also controlled for time-varying covariates like population age structure and competitiveness of elections. 
                 The model was validated using parallel trend checks and a placebo DiD test.
               </p>
@@ -171,20 +170,20 @@
               <h5><strong>Estimated Effect of Voter ID Requirements</strong></h5>
               <p>
                 Voter turnout declined by 5.7 percentage points in treated wards between 2016 and 2018, 
-                compared to 3.6 points in matched control wards. The DiD model estimated a 2.29 percentage point 
+                compared to 3.6 points in matched control wards (Fig 3). The DiD model estimated a 2.29 percentage point 
                 reduction in turnout due to the ID requirement, but this effect was <em>not</em> statistically significant (p = 0.19). 
-                Although the result does not confirm voter suppression due to voter ID requirements, it is important to note that Bromley 
+                
+                <br><br>Although the result does not confirm voter suppression caused by voter ID requirements, it is important to note that Bromley 
                 is a predominantly white and relatively conservative population in London - these are important demographic and 
                 political features that 
-                may have <em>underestimated</em> the policy’s effects on turnout. 
+                may have underestimated the policy's effects on turnout. 
               </p>
                 
               <h5><strong>Future Directions</strong></h5>
               <p>  
-                Ideally, future studies should estimate the subgroup-specific impacts (e.g. by age or ethnicity), 
+                Ideally, studies should estimate the impacts of ID laws across subgroups, such as by age or ethnicity, 
                 especially for higher-stakes elections like the General Election where more diverse populations participate. 
-                Although granular voter participation data is not publicly available, 
-                such studies can help us understand who might be most affected by voter ID policies 
+                While granular voter participation data is not publicly available, such studies can help us understand who might be most affected by voter ID policies 
                 and guide us towards more equitable electoral reforms.
               </p>
                 
